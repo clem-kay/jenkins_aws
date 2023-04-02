@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Starting a container'){
             steps {
-                sh 'docker run --name jenkins_lab -p 8081:80 clem/clem_webserver:latest'
+                sh 'docker run -d --name jenkins_lab -p 8081:80 clem/clem_webserver:latest'
             }
         }
     }
