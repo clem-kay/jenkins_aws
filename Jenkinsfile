@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Starting a container'){
             steps {
-                sh 'docker run --name jenkins_lab -p 8081:80 jenkins_lab_container:v1
+                sh 'docker run --name jenkins_lab -p 8081:80 jenkins_lab_container:v1'
             }
         }
     }
